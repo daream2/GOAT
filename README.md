@@ -1,6 +1,8 @@
-# GOAT — Project Page
+# GOAT: A Training Framework for Goal-Oriented Agent with Tools
 
-A static academic project page based on the [Nerfies](https://github.com/nerfies/nerfies.github.io) template.
+Project page for the paper [GOAT: A Training Framework for Goal-Oriented Agent with Tools](https://arxiv.org/abs/2510.12218) (ACL 2026 Findings).
+
+Built on the [Nerfies](https://github.com/nerfies/nerfies.github.io) project page template.
 
 ## Local preview
 

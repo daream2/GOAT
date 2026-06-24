@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="GOAT project page.">
-  <meta name="keywords" content="GOAT">
+        content="GOAT: A Training Framework for Goal-Oriented Agent with Tools">
+  <meta name="keywords" content="GOAT, LLM agents, tool use, goal-oriented, API">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GOAT</title>
+  <title>GOAT: A Training Framework for Goal-Oriented Agent with Tools</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -60,27 +60,29 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">GOAT: Your Paper Title Here</h1>
+          <h1 class="title is-1 publication-title">GOAT: A Training Framework for Goal-Oriented Agent with Tools</h1>
           <div class="is-size-3 publication-authors">
-            <b>Venue / Year</b>
+            <b>ACL 2026 Findings</b>
           </div>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><a href="#">Author One</a><sup>1,*</sup>,</span>
-            <span class="author-block"><a href="#">Author Two</a><sup>1,*</sup>,</span>
-            <span class="author-block"><a href="#">Author Three</a><sup>2</sup></span>
+            <span class="author-block">Hyunji Min<sup>1</sup>,</span>
+            <span class="author-block">Sangwon Jung<sup>1</sup>,</span>
+            <span class="author-block">Junyoung Sung<sup>1</sup>,</span>
+            <span class="author-block">Dosung Lee<sup>1</sup>,</span>
+            <span class="author-block">Leekyeung Han<sup>1</sup>,</span>
+            <span class="author-block"><a href="https://phseo.github.io/">Paul Hongsuck Seo</a><sup>1,&dagger;</sup></span>
           </div>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Institution One,</span>
-            <span class="author-block"><sup>2</sup>Institution Two</span>
+            <span class="author-block"><sup>1</sup>Korea University</span>
             <br>
-            <span class="eql-cntrb"><small><sup>*</sup>Equal contribution</small></span>
+            <span class="eql-cntrb"><small><sup>&dagger;</sup>Corresponding Author</small></span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="#"
+                <a href="https://arxiv.org/pdf/2510.12218"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -89,7 +91,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="#"
+                <a href="https://arxiv.org/abs/2510.12218"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -122,8 +124,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Write your abstract here. This is placeholder text for the GOAT project page.
-            Replace it with a short paragraph that summarizes your motivation, method, and key results.
+            Current approaches rely on zero-shot evaluation due to the absence of training data;
+            while proprietary models such as GPT-4 exhibit strong reasoning capabilities,
+            smaller open-source models remain ineffective at complex tool use.
+            To address this limitation, we propose a novel training framework GOAT,
+            that enables fine-tuning LLM agents without human annotation.
+            GOAT automatically synthesizes goal-oriented API execution data from API documents
+            using a novel call-first generation paradigm, that constructs training data based on
+            executed API call sequences. Through extensive experiments, we show that GOAT-trained
+            agents achieve state-of-the-art performance across multiple existing goal-oriented benchmarks.
+            In addition, we introduce GOATBench, a new goal-oriented API execution benchmark,
+            and demonstrate that agents trained with GOAT also excel in this setting.
+            These results highlight GOAT as a practical path toward building robust open-source
+            LLM agents capable of complex reasoning and tool use.
           </p>
         </div>
       </div>
@@ -170,10 +183,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{goat,
-    title  = "GOAT: Your Paper Title Here",
-    author = "Author One and Author Two and Author Three",
-    year   = "2026"
+    <pre><code>@article{min2025goat,
+    title   = "GOAT: A Training Framework for Goal-Oriented Agent with Tools",
+    author  = "Min, Hyunji and Jung, Sangwon and Sung, Junyoung and Lee, Dosung and Han, Leekyeung and Seo, Paul Hongsuck",
+    journal = "arXiv preprint arXiv:2510.12218",
+    year    = "2025"
 }
 </code></pre>
   </div>
