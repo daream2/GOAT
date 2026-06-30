@@ -189,11 +189,27 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{min2025goat,
-    title   = "GOAT: A Training Framework for Goal-Oriented Agent with Tools",
-    author  = "Min, Hyunji and Jung, Sangwon and Sung, Junyoung and Lee, Dosung and Han, Leekyeung and Seo, Paul Hongsuck",
-    journal = "arXiv preprint arXiv:2510.12218",
-    year    = "2025"
+    <pre><code>@inproceedings{min-etal-2026-goat,
+    title = "{GOAT}: A Training Framework for Goal-Oriented Agent with Tools",
+    author = "Min, Hyunji  and
+      Jung, Sangwon  and
+      Sung, Junyoung  and
+      Lee, Dosung  and
+      Han, Leekyeung  and
+      Seo, Paul Hongsuck",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1150/",
+    pages = "22934--22963",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Large language models (LLMs) have evolved from pure text generators into interactive agents capable of invoking external tools. However, LLM agents still struggle with goal-oriented queries, which require decomposing high-level objectives into sequences of interdependent API calls with accurate planning and execution. Current approaches rely on zero-shot evaluation due to the absence of training data; while proprietary models such as GPT-4 exhibit strong reasoning capabilities, smaller open-source models remain ineffective at complex tool use. To address this limitation, we propose a novel training framework GOAT, that enables fine-tuning LLM agents without human annotation. GOAT automatically synthesizes goal-oriented API execution data from API documents using a novel call-first generation paradigm, that constructs training data based on executed API call sequences. Through extensive experiments, we show that GOAT-trained agents achieve state-of-the-art performance across multiple existing goal-oriented benchmarks. In addition, we introduce GOATBench, a new goal-oriented API execution benchmark, and demonstrate that agents trained with GOAT also excel in this setting. These results highlight GOAT as a practical path toward building robust open-source LLM agents capable of complex reasoning and tool use."
 }
 </code></pre>
   </div>
