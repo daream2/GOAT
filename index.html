@@ -224,12 +224,30 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3 has-text-centered">Results</h2>
-        <!-- <img src="./static/images/result.png" class="center"/> -->
-        <div class="content has-text-justified">
-          <p>
-            Present your results here, with figures or tables placed in ./static/images/.
-          </p>
-        </div>
+        <figure class="image" style="margin: 0 0 1.5rem 0;">
+          <img src="./static/images/experiment1.png" alt="Experiment results on RestBench">
+          <figcaption class="has-text-justified" style="margin-top: 0.75rem; font-size: 0.9rem;">
+            <b>Experiment results on RestBench.</b> Closed-source and RestGPT results are reported numbers from original
+            paper, shown here for reference. Metrics are Success%, Correct Path%, and &Delta; Solution Length. For Vicuna-13B, we
+            additionally reproduced RestGPT using the released code and found substantially lower performance than reported
+            (marked with * in the table).
+          </figcaption>
+        </figure>
+        <figure class="image" style="margin: 0 0 1.5rem 0;">
+          <img src="./static/images/experiment2.png" alt="Experiment results on API-Bank">
+          <figcaption class="has-text-justified" style="margin-top: 0.75rem; font-size: 0.9rem;">
+            <b>Experiment results on API-Bank.</b> Performance of the API-Bank prompting method is reported numbers
+            from original paper. Since the official inference code is unavailable, additional metrics (Success%, Correct Path%)
+            could not be evaluated.
+          </figcaption>
+        </figure>
+        <figure class="image" style="margin: 0;">
+          <img src="./static/images/experiment3.png" alt="Experiment results on GOATBench">
+          <figcaption class="has-text-justified" style="margin-top: 0.75rem; font-size: 0.9rem;">
+            <b>Experiment results on GOATBench.</b> Metrics are SA (Selection Accuracy), IA (Invocation Accuracy),
+            and SR (Success Rate).
+          </figcaption>
+        </figure>
       </div>
     </div>
 
