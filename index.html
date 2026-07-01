@@ -183,8 +183,24 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3 has-text-centered">Method</h2>
-        <!-- Add a figure to ./static/images/ and reference it here -->
-        <!-- <img src="./static/images/method.png" class="center"/> -->
+        <figure class="image" style="margin: 0 0 1.5rem 0;">
+          <img src="./static/images/method1.png" alt="API dependency graph construction process">
+          <figcaption class="has-text-justified" style="margin-top: 0.75rem; font-size: 0.9rem;">
+            <b>Overview of API dependency graph construction process.</b> Given the API documents, each
+            document is first parsed to extract function descriptions, which are then used to initialize a raw dependency graph in
+            (a). This graph is progressively refined through three filtering steps (c)-(e), resulting in the final API dependency
+            graph that captures reliable relations among APIs. The graphs shown under (b)-(e) illustrate how the API dependency
+            graph evolves as it is progressively refined through each filtering step.
+          </figcaption>
+        </figure>
+        <figure class="image" style="margin: 0 0 1.5rem 0;">
+          <img src="./static/images/method2.png" alt="Goal-oriented API execution data construction">
+          <figcaption class="has-text-justified" style="margin-top: 0.75rem; font-size: 0.9rem;">
+            <b>Overview of goal-oriented API execution data construction.</b> The process involves (a) sampling
+            connected API sequences, (b) generating API calls, outputs, and sub-queries, and (c) composing user queries and
+            final responses.
+          </figcaption>
+        </figure>
         <div class="content has-text-justified">
           <p>
             GOAT automatically constructs training data for goal-oriented tool-use agents from raw API documentation.
