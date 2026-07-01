@@ -187,11 +187,19 @@
         <!-- <img src="./static/images/method.png" class="center"/> -->
         <div class="content has-text-justified">
           <p>
-            Describe your method here. Math is supported via KaTeX, e.g. inline \(x^2\) or
-            display equations:
-            \[
-              y = f(x)
-            \]
+            GOAT automatically constructs training data for goal-oriented tool-use agents from raw API documentation.
+            First, it parses each API document into structured input and output specifications, then builds an
+            over-complete API dependency graph where each edge represents a possible relation between the output of
+            one API and the input argument of another. This graph is progressively refined through embedding-based
+            filtering, LLM-based validation, and real API execution, leaving only reliable and executable API dependencies.
+          </p>
+          <p>
+            Based on the refined dependency graph, GOAT samples connected API sequences and follows a call-first
+            generation strategy. Instead of asking an LLM to infer API calls from a user query, GOAT first instantiates
+            and executes API calls, obtains real outputs, and then abstracts the completed workflow into a goal-oriented
+            user query and final response. The resulting synthetic data is used to fine-tune both the LLM agent and the
+            API retriever, enabling the agent to learn planning, argument filling, API execution, and response generation
+            for complex goal-oriented tasks.
           </p>
         </div>
       </div>
